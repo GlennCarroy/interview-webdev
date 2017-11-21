@@ -1,14 +1,13 @@
 * {
-    /*font-family: 'Montserrat', sans-serif;
-	font-size: 14px;*/
+    font-family: 'Montserrat', sans-serif;
+	/*font-size: 14px;*/
 	box-sizing: border-box;
-	border: black solid 1px;
 	margin: 0;
 }
 
 .main-container {
 	display: grid;
-	grid-template-columns: 15% 85%;
+	grid-template-columns: 20% 80%;
 	grid-template-rows: 5% 85% 10%;
 	grid-gap: 1em 1em;
 }
@@ -16,26 +15,44 @@
 /* Block placement */
 
 body {
-	margin-top: 3%;
+	margin-top:; 3%;
+	background-color: #74917D;
 }
 
 header {
 	grid-column: 1; grid-row:2;
 	min-width: 150px;
+	background: linear-gradient(#FF6800,#B24900);
+	border-radius: 5px;
+
 } 
 
 main {
 	grid-column: 2; grid-row: 2;
 	padding: 10px;
+	background-color: rgba(0,167,178);
+	border-radius: 5px;
 }
 
 footer {
 	grid-row: 3;
-	column-span: 2;
+	column-span: all;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
+}
+
+/*============================================*/
+/* Style des différentes boites
+Certaines notions de styles ont déjà été écrites dans le positionnement au dessus*/
+
+ul {
+	padding-left: 10px;
+}
+li {
+	list-style-type: none;
+	text-decoration: none;
 }
 
 
