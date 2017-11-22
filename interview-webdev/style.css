@@ -1,58 +1,127 @@
 * {
     font-family: 'Montserrat', sans-serif;
-	/*font-size: 14px;*/
+	font-size: 14px;
 	box-sizing: border-box;
 	margin: 0;
+	color: white;
+}
+
+/* 17242f #63c3d1 * et blanc */
+
+/* Placement container + style */
+body {
+	background-color: #17242f;
 }
 
 .main-container {
-	display: grid;
-	grid-template-columns: 20% 80%;
-	grid-template-rows: 5% 85% 10%;
-	grid-gap: 1em 1em;
-}
-
-/* Block placement */
-
-body {
-	margin-top:; 3%;
-	background-color: #74917D;
+	width: 90%;
+	display: flex;
+	margin: 50px auto;
 }
 
 header {
-	grid-column: 1; grid-row:2;
-	min-width: 150px;
-	background: linear-gradient(#FF6800,#B24900);
-	border-radius: 5px;
-
-} 
+	width: 25%;
+	padding: 10px;
+	min-width: 200px;
+	background-color: #63c3d1;
+}
 
 main {
-	grid-column: 2; grid-row: 2;
+	margin: 0 15px 0 15px;
+	width: 75%;
 	padding: 10px;
-	background-color: rgba(0,167,178);
-	border-radius: 5px;
 }
 
 footer {
-	grid-row: 3;
-	column-span: all;
+	width: 5%;
+	min-width: 50px;
+	background-color: white;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
+	flex-direction: column;
 	align-items: center;
 }
 
-/*============================================*/
-/* Style des différentes boites
-Certaines notions de styles ont déjà été écrites dans le positionnement au dessus*/
-
-ul {
-	padding-left: 10px;
+aside {
+	background-color: white;
+	margin-top: 10px;
 }
-li {
+
+aside h2 {
+	color: #17242f ;
+	padding: 5px 0 0 5px;
+	margin: 0;
+}
+
+aside h3 {
+	color: #17242f ;
+	padding: 5px 0 0 5px;
+	margin: 0;
+}
+
+aside p {
+	color: #63c3d1;
+}
+
+.side-contain {
+	padding: 10px;
+	margin-top: 5px;
+}
+
+.section-suivante { /*Pour séparer les parties de l'interview*/
+	margin-top: 30px;
+}
+
+/*Style des balises*/
+
+header ul {
+	padding: 0;
 	list-style-type: none;
+}
+
+header nav ul li{
+	margin: 10px 0 10px 0;
+}
+
+header nav ul li a{
+	font-size: 20px;
+}
+
+header h1 {
+	margin-top: 40px;
+	font-size: 30px;
+}
+
+.picture {
+	display: block;
+	margin: 25px auto;
+	width: 180px;
+	border-radius: 100%;
+}
+
+.entreprise {
+	width: 250px;
+	border-radius: 0;
+}
+
+a {
 	text-decoration: none;
 }
 
+.fa {
+	font-size: 60px;
+	color: #17242f;
+	margin: 10px 0 10px 0;
+}
 
+h2 {
+	font-size: 20px;
+	margin: 0px 0 20px 0;
+}
+
+h3 {
+	margin: 10px 0 10px 10px;
+}
+
+p {
+	line-height: 25px;
+}
