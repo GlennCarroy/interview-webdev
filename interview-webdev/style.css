@@ -76,6 +76,7 @@ aside p {
 header ul {
 	padding: 0;
 	list-style-type: none;
+	position: relative;
 }
 
 header nav ul li{
@@ -108,7 +109,6 @@ a {
 }
 
 .fa {
-	font-size: 60px;
 	color: #17242f;
 	margin: 10px 0 10px 0;
 }
@@ -120,8 +120,61 @@ h2 {
 
 h3 {
 	margin: 10px 0 10px 10px;
+	font-size: 16px;
 }
 
 p {
 	line-height: 25px;
+}
+
+/* Pseudo-sélecteurs */
+
+.fa-instagram {
+	transition: 1s ease-in-out;
+}
+
+.fa-instagram:hover {
+	color: #cd486b;
+	transform: rotate(360deg) scale(1.5);
+}
+
+.fa-linkedin {
+	transition: 1s ease-in-out;
+}
+
+.fa-linkedin:hover {
+	color: #0077B5;
+	transform: rotate(360deg) scale(1.5);
+}
+
+.fa-facebook {
+	transition: 1s ease-in-out;
+}
+
+.fa-facebook:hover {
+	color: #3b5998;
+	transform: rotate(360deg) scale(1.5);
+
+}
+
+header nav ul li {
+	width: 180px ;
+	transition: 0.6s ease-out;
+	/*transform:skew(-30deg);*/
+}
+
+header nav ul li:after {
+	content: "";
+	position: absolute;
+	left: 130px;
+	width: 5px;
+	height: 5px;
+	border-left: 30px solid transparent;
+	border-right: 0px solid #63c3d1;
+	border-top: 25px solid #63c3d1;
+}
+
+header nav ul li:hover{
+	box-shadow: #17242f 160px 0px 0px 0px inset;
+	font-style: italic;
 }
