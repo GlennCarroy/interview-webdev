@@ -6,8 +6,6 @@
 	color: white;
 }
 
-/* 17242f #63c3d1 * et blanc */
-
 /* Placement container + style */
 body {
 	background-color: #17242f;
@@ -61,6 +59,9 @@ aside h3 {
 
 aside p {
 	color: #63c3d1;
+}
+article {
+	z-index: 999;
 }
 
 .side-contain {
@@ -129,6 +130,41 @@ p {
 	line-height: 25px;
 }
 
+.badge {
+ position: absolute;
+ background: #63c3d1;
+ opacity: 0.2;
+ height: 200px;
+ width: 200px;
+ -moz-border-radius:    100px;
+ -webkit-border-radius: 100px;
+ border-radius:         100px;
+ top: 11%;
+ right: 1%;
+}
+.badge:before,
+.badge:after {
+  content: '';
+  position: absolute;
+  border-bottom: 140px solid #63c3d1;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  top: 140px;
+  left: -20px;
+  -webkit-transform: rotate(-140deg);
+  -moz-transform:    rotate(-140deg);
+  -ms-transform:     rotate(-140deg);
+  -o-transform:      rotate(-140deg);
+}
+
+.badge:after {
+  left: auto;
+  right: -20px;
+  -webkit-transform: rotate(140deg);
+  -moz-transform:    rotate(140deg);
+  -ms-transform:     rotate(140deg);
+  -o-transform:      rotate(140deg);
+}
 
 /* Pseudo-sélecteurs */
 
