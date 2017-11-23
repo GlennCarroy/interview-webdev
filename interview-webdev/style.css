@@ -85,6 +85,7 @@ header nav ul li{
 
 header nav ul li a{
 	font-size: 20px;
+	padding-left:5px;
 }
 
 header h1 {
@@ -126,6 +127,7 @@ h3 {
 p {
 	line-height: 25px;
 }
+
 
 /* Pseudo-sélecteurs */
 
@@ -175,6 +177,10 @@ header nav ul li:after {
 }
 
 header nav ul li:hover{
+	box-shadow: #17242f 160px 0px 0px 0px inset;
+	font-style: italic;
+}
+.current { /*Style de l'onglet chargé*/
 	box-shadow: #17242f 160px 0px 0px 0px inset;
 	font-style: italic;
 }
