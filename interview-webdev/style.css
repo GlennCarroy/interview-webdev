@@ -287,6 +287,7 @@ main a h2:hover { /*Style des titres pour light-box*/
 	}
 	.main-container main{
 		order: 2;
+		margin: 0 auto;
 	}
 	footer{
 		order: 3;
